@@ -6,7 +6,12 @@ const DisplayLocalStorage = withStorageContext(({ local }) => (
   <div>Local storage values{JSON.stringify(local, undefined, 4)}</div>
 ))
 class Buttons extends PureComponent {
-  static getDerivedStateFromProps({ local: { localStorageCount }, session: { sessionStorageCount } }) {
+  state = {
+    localStorageCount: 0,
+    sessionStorageCount: 0
+  }
+
+  static getDerivedStateFromProps({ local: { localStorageCount = 0}, session: { sessionStorageCount = 0 } }) {
     return {
       localStorageCount,
       sessionStorageCount
@@ -32,11 +37,7 @@ class Buttons extends PureComponent {
 const ButtonsEnhanced = withStorageContext(Buttons)
 
 class App extends PureComponent {
-  state = {
-    localStorageCount: 0,
-    sessionStorageCount: 0
-  }
-
+  
   render() {
     return (
       <div style={{ padding: 20 }}>

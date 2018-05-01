@@ -16,6 +16,8 @@ npm install --save react-storage-context
 
 `StorageContext`
 
+Initializes and manages storage, setting the values of the StorageContext.Provider
+
 ```jsx
 import StorageContext from "react-storage-context"
 
@@ -29,11 +31,18 @@ class App extends PureComponent {
 
 `withStorageContext`
 
+Will provide the api as props:
+
+* `local` local storage object
+* `session` session storage object
+* `setLocal` update local storage object
+* `setSession` update session storage object
+
 ```jsx
 import { withStorageContext } from "react-storage-context"
 
 @withStorageContext
-class App extends Pu_reComponent {
+class App extends PureComponent {
   render() {
     // props to read
     const {
@@ -56,7 +65,7 @@ class App extends PureComponent {
   render() {
     // render props
     return (
-      <Consumer>{({ session }) => <div>Session storage values{JSON.stringify(session, undefined, 4)}</div>}</Consumer>
+      <Consumer>{({ session }) => <div>Session storage values: {JSON.stringify(session, undefined, 4)}</div>}</Consumer>
     )
   }
 }

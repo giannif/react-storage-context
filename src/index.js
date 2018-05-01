@@ -1,6 +1,11 @@
 import React, { createContext, PureComponent } from 'react'
 
-const StorageContext = createContext({})
+const StorageContext = createContext({
+  session: {},
+  local: {},
+  saveLocal: () => {},
+  saveSession: () => {}
+})
 
 export const Consumer = StorageContext.Consumer
 
