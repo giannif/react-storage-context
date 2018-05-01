@@ -1,6 +1,6 @@
 {
   "name": "react-storage-context",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Get and set local and session storage",
   "author": "giannif",
   "license": "MIT",
@@ -20,8 +20,8 @@
   "dependencies": {},
   "peerDependencies": {
     "prop-types": "^15.5.4",
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -40,6 +40,7 @@
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
     "gh-pages": "^1.1.0",
+    "prettier": "^1.12.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "^1.1.1",
@@ -51,7 +52,5 @@
     "rollup-plugin-postcss": "^1.1.0",
     "rollup-plugin-url": "^1.3.0"
   },
-  "files": [
-    "dist"
-  ]
+  "files": ["dist"]
 }

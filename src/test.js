@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import StorageContext from './'
 
-describe('ExampleComponent', () => {
+describe('StorageContext', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(StorageContext).toBeTruthy()
   })
 })
