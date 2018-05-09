@@ -1,6 +1,6 @@
 {
   "name": "react-storage-context",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get and set local and session storage",
   "author": "giannif",
   "license": "MIT",
