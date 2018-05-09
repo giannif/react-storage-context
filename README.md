@@ -2,21 +2,19 @@
 
 > Get and set local and session storage
 
-_Wrote this pretty quickly on my gf's computer, will be refining_
-
 [![NPM](https://img.shields.io/npm/v/react-storage-context.svg)](https://www.npmjs.com/package/react-storage-context) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-storage-context
+yarn add react-storage-context
 ```
 
 ## Usage
 
 `StorageContext`
 
-Initializes and manages storage, setting the values of the StorageContext.Provider
+Initializes and manages storage, setting the values of the `StorageContext.Provider`
 
 ```jsx
 import StorageContext from "react-storage-context"
