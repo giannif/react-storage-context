@@ -3,7 +3,8 @@ node_js:
 - node
 cache: yarn
 script:
-- npm test
+- npm run lint
+- npm run coverage | coveralls
 notifications:
   email:
     on_success: change
