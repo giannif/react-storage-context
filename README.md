@@ -1,8 +1,9 @@
 # react-storage-context
 
-> Get and set local and session storage
-
 [![NPM](https://img.shields.io/npm/v/react-storage-context.svg)](https://www.npmjs.com/package/react-storage-context) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Coverage Status](https://coveralls.io/repos/github/giannif/react-storage-context/badge.svg?branch=master)](https://coveralls.io/github/giannif/react-storage-context?branch=master)
+
+> Get and set local and session storage using the React Context API
 
 ## Install
 
